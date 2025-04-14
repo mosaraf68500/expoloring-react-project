@@ -2,25 +2,16 @@
 import './App.css'
 import DaisyNav from './components/DaisyNav/DaisyNav';
 import Link from './components/NavBar/Link';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
-  const data = [
-    { id: 1, name: "Home", path: "/home" },
-    { id: 2, name: "About", path: "/about" },
-    { id: 3, name: "Services", path: "/services" },
-    { id: 4, name: "Contact", path: "/contact" },
-    { id: 5, name: "Blog", path: "/blog" }
-  ];
+  
   
 
   return (
     <>
 
-    <ul className='flex'>
-      {
-        data.map(route=><Link key={route.id} route={route}></Link>)
-      }
-    </ul>
+    
 
     {/* <ul className='flex'>
       {
@@ -31,7 +22,8 @@ function App() {
     
 
 <header>
-<DaisyNav></DaisyNav>
+<NavBar></NavBar>
+{/* <DaisyNav></DaisyNav> */}
 </header>
 
 <main>
